@@ -1,4 +1,4 @@
-NAME = ZOMBIE
+NAME = zombie
 SRCS = main.cpp \
 			Zombie.cpp \
 			newZombie.cpp \
@@ -7,7 +7,7 @@ OBJS = $(SRCS:.cpp=.o)
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 CXX = c++
 ${NAME}: $(OBJS)
-		$(CXX) $(CXXFLAGS) -o ZOMBIE $(OBJS)
+		$(CXX) $(CXXFLAGS) -o zombie $(OBJS)
 all : ${NAME}
 bonus :
 clean :

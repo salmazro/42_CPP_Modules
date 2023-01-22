@@ -1,10 +1,10 @@
-NAME = BRAIN
+NAME = brain
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 CXX = c++
 ${NAME}: $(OBJS)
-		$(CXX) $(CXXFLAGS) -o BRAIN $(OBJS)
+		$(CXX) $(CXXFLAGS) -o brain $(OBJS)
 all : ${NAME}
 bonus :
 clean :

@@ -1,10 +1,10 @@
-NAME = WORD
+NAME = word
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 CXX = c++
 ${NAME}: $(OBJS)
-		$(CXX) $(CXXFLAGS) -o WORD $(OBJS)
+		$(CXX) $(CXXFLAGS) -o word $(OBJS)
 all : ${NAME}
 bonus :
 clean :

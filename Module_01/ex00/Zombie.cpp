@@ -18,7 +18,7 @@ Zombie::Zombie()
 // destructor
 Zombie::~Zombie()
 {
-	std::cout << "Kill Zombie: " << get_name() << std::endl;
+	std::cout << "Zombie " << get_name() << " is dead." << std::endl;
 }
 
 void Zombie::announce(void)

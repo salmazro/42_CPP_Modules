@@ -1,4 +1,4 @@
-NAME = HUMAN
+NAME = human
 SRCS = main.cpp \
 			HumanA.cpp \
 			HumanB.cpp \
@@ -7,7 +7,7 @@ OBJS = $(SRCS:.cpp=.o)
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 CXX = c++
 ${NAME}: $(OBJS)
-		$(CXX) $(CXXFLAGS) -o HUMAN $(OBJS)
+		$(CXX) $(CXXFLAGS) -o human $(OBJS)
 all : ${NAME}
 bonus :
 clean :
