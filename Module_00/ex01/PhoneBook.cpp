@@ -23,7 +23,7 @@ std::string Layout(std::string str)
 	if (str.length() > 10)
 	{
 		std::string less = str;
-		less.resize(8);
+		less.resize(9);
 		less.append(".");
 		return (less);
 	}
