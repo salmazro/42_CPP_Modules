@@ -1,14 +1,13 @@
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap()
+ClapTrap::ClapTrap():name("ClapTrap-00"), hitPoints(10),energyPoints(10),attackDamage(4)
 {
 	std::cout << "ClapTrap default constructor has been called" << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name)
+ClapTrap::ClapTrap(std::string name) : name(name)
 {
-	this->setname(name);
 	this->getname();
 	std::cout << "ClapTrap overload constructor has been called" << std::endl;
 	this->hitPoints = 10;
@@ -64,18 +63,18 @@ void ClapTrap::takeDamage(unsigned int amount)
 		this->energyPoints--;
 
 	}
-	std::cout << "ClapTrap " << this->name << " takes " << hit << " of damage \n"
+	std::cout << this->name << " takes " << hit << " of damage \n"
 			<< "remaining health: " << this->hitPoints << std::endl;
 
 }
 void ClapTrap::beRepaired(unsigned int amount)
 {
 	int repaired = amount;
-	while(amount && this->hitPoints <= 10)
+	while(amount && this->hitPoints >= 10)
 	{
 		this->hitPoints++;
 		amount--;
 	}
-	std::cout << "ClapTrap " << this->name << " is being repaired " << repaired << " to increase its health -> "
+	std::cout << this->name << " is being repaired " << repaired << " to increase its health -> "
 		<< this->hitPoints << std::endl;
 }
