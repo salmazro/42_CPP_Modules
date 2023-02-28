@@ -19,8 +19,8 @@ void	test_intern(Bureaucrat &b1, Bureaucrat &b2, std::string const &formName, st
 
 int main()
 {
-    Bureaucrat Brad("Albert Einstein", 50);
-	Bureaucrat Chad("Mother Teresa", 79);
+    Bureaucrat Brad("Brad", 50);
+	Bureaucrat Chad("Chad", 79);
 	std::cout << "----------------------------------------------------------------" << std::endl;
 	test_intern(Brad, Chad, "Robotomy Request", "Bender");
 	std::cout << "----------------------------------------------------------------" << std::endl;

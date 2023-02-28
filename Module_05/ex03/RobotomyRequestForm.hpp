@@ -3,6 +3,8 @@
 
 # include <iostream>
 # include "AForm.hpp"
+# include <stdlib.h> /* rand */
+# include <time.h> /* time */
 
 class RobotomyRequestForm: public AForm
 {

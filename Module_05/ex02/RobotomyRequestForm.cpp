@@ -40,6 +40,8 @@ RobotomyRequestForm & RobotomyRequestForm::operator=(const RobotomyRequestForm& 
 
 void RobotomyRequestForm::execute(Bureaucrat const &execute) const
 {
+	srand (time(NULL)); 
+
 	if (this->_target.length() == 0)
 		throw std::out_of_range("No target");
 	else if (execute.getGrade() > this->getGradeExec())
