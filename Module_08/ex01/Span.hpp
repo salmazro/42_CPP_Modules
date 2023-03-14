@@ -2,6 +2,7 @@
 #define SPAN_HPP
 
 # include <iostream>
+#include <climits>
 # include <exception>
 # include <cstdlib>
 # include <time.h>
